@@ -1,0 +1,33 @@
+<!-- GET BEEF AND ICON IN style-guild.md AND assets folder-->
+<div class="container">
+  <div class="content d-flex flex-column justify-content-center align-items-center" [ngClass]="{'invalid':CHK_VALID}">
+    <div class="Logo mt-5">
+      <img src="../assets/images/logo.svg" alt="Logo">
+    </div>
+    <p>We are launching <span class="soon">soon!</span><br><span class="txt-sub">Subscribe and get notified</span></p>
+    <div class="input-sec d-flex justify-content-center align-items-center">
+      <input class="form-control col-sm-12 col-md-7 col-12" type="text" (keyup.enter)="GetInput()" placeholder="Your email address..." [(ngModel)]="Email">
+      <button class="btn btn-primary col-sm-12 col-md-5 col-12" (click)="GetInput()" >Notify Me</button>
+    </div>
+    <div class="error">
+      <p>Please provide a valid email address</p>
+    </div>
+    <div class="dashboard">
+      <img src="../assets/images/illustration-dashboard.png" alt="dashboard">
+    </div>
+    <div class="footer d-flex">
+      <div class="icon-fb">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="icon-twt">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="icon-ig">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright Ping. All rights reserved.</p>
+    </div>
+  </div>
+</div>
